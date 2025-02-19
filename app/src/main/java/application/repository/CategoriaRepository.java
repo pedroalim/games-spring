@@ -1,6 +1,6 @@
 package application.repository;
 
-import org.sptringframework.data.repository.CrudRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import application.model.Categoria;
 

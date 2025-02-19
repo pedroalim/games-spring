@@ -2,8 +2,8 @@ package application.controller;
 
 import java.util.Optional;
 
-import org.sptringframework.beans.factory.annotation.Autowired;
-import org.sptringframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,7 +19,7 @@ public class CategoriaController {
     private CategoriaRepository categoriaRepo;
 
     @RequestMapping("/list")
-    public String list(model ui) {
+    public String list(Model ui) {
         ui.addAttribute("categorias", categoriaRepo.findAll());
         return "categoria/list";
     }
