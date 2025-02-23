@@ -57,7 +57,7 @@ public class Jogo {
         this.categoria = categoria;
     }
 
-    public Set<Plataforma> getPlataforma() {
+    public Set<Plataforma> getPlataformas() {
         return plataformas;
     }
     public void setPlataformas(Set<Plataforma> plataformas) {

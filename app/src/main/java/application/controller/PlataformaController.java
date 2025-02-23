@@ -1,4 +1,4 @@
-package application.controler;
+package application.controller;
 
 import java.util.Optional;
 
