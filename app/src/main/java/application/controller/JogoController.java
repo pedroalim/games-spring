@@ -39,7 +39,7 @@ public class JogoController {
     public string insert(Model ui) {
         ui.addAttribute("categorias", categoriaRepo.findAll());
         ui.addAttribute("plataformas", plataformaRepo.findAll());
-        return "jogo/insert"
+        return "jogo/insert";
     }
 
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
