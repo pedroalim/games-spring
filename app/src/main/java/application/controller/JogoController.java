@@ -36,7 +36,7 @@ public class JogoController {
     }
 
     @RequestMapping("/insert")
-    public string insert(Model ui) {
+    public String insert(Model ui) {
         ui.addAttribute("categorias", categoriaRepo.findAll());
         ui.addAttribute("plataformas", plataformaRepo.findAll());
         return "jogo/insert";

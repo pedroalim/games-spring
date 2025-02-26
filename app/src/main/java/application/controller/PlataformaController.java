@@ -44,7 +44,7 @@ public class PlataformaController {
         Optional<Plataforma> plataforma = plataformaRepo.findById(id);
 
         if(plataforma.isPresent()) {
-            ui.addAttribute("plataforma". plataforma.get());
+            ui.addAttribute("plataforma", plataforma.get());
             return "plataforma/update";
         }
 
